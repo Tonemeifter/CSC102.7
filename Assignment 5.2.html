@@ -1,0 +1,82 @@
+<!-- Richard Cardiel, CSC102, 06.14.2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Palindrome Checker!</title>
+  <link rel="stylesheet" href="pal.css">
+</head>
+<body>
+
+  <!-- Heading of the page -->
+  <h1>Palindrome Checker!</h1>
+
+  <p>
+    <!-- Link back to the landing page from other pages -->
+    <a href="Assignment 7.2.html".html">&larr; Back to Landing Page</a>
+  </p>
+
+  <!-- Form for user to submit strings -->
+  <form id="palindromeForm">
+    <!-- Input box for user to enter word -->
+    <label for="userInput">Enter a word or phrase:</label><br><br>
+    <input type="text" id="userInput" required>
+    <br><br>
+    <!-- Submit button -->
+    <input type="submit" value="Check">
+  </form>
+
+  <!-- Area to display the results -->
+  <div id="result"></div>
+
+  <!-- image info-->
+  <div id="image-box">
+    <img src= "IMG_3501.JPG">
+  </div>
+
+  <!-- JavaScript section  -->
+  <script>
+    // Get reference to the form and result div
+    const form = document.getElementById("palindromeForm");
+    const resultDiv = document.getElementById("result");
+
+    // Loop control variable
+    let keepGoing = true;
+
+    // Form submission event
+    form.onsubmit = function(event) {
+      // Prevent the form from refreshing the page
+      event.preventDefault();
+
+      // Get user input
+      let input = document.getElementById("userInput").value;
+
+      // Remove spaces and convert to lowercase for comparison
+      let cleaned = input.replace(/\s+/g, '').toLowerCase();
+
+      // Reverse the cleaned string
+      let reversed = cleaned.split('').reverse().join('');
+
+      // Check if the cleaned string is a palindrome
+      if (cleaned === reversed) {
+        resultDiv.innerHTML += `<p>"${input}" is a palindrome.</p>`;
+      } else {
+        resultDiv.innerHTML += `<p>"${input}" is NOT a palindrome.</p>`;
+      }
+
+      // Ask user if they want to continue
+      // confirm to simulate user decision 
+      if (!confirm("Do you want to check another word?")) {
+        // If not, disable the form
+        form.innerHTML = "<p>Thank you for using the Palindrome Checker!</p>";
+      } else {
+        // Clear the input box for the next word
+        document.getElementById("userInput").value = '';
+        document.getElementById("userInput").focus();
+      }
+    };
+  </script>
+</body>
+</html>

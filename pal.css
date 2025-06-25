@@ -1,0 +1,44 @@
+body {
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-color: #034681;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #ffffff;
+      
+    }
+
+    #result {
+      font-size: 1.2em;
+      margin-top: 20px;
+      color: #72d872;
+    }
+
+    #image-box {
+      margin-top: 30px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1em;
+      width: 300px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #4b0082;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00f4af;
+    }
+
+    img {
+        width: 450px;
+    }

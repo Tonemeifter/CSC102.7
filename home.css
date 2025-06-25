@@ -1,0 +1,14 @@
+body {
+    background-color: rebeccapurple;
+    color: ghostwhite;
+    font-size: xx-large;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    margin-left: 700px;
+    max-width: 450px;
+}

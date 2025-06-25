@@ -1,0 +1,47 @@
+<!-- Created by Richie Cardiel, Date: 06/01/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Access Form</title>
+    <!-- Link to external JavaScript -->
+    <script src="validate_custom.js" defer></script>
+    <!-- Embedded CSS for visual design -->
+    <link rel="stylesheet" href="strings.css">
+</head>
+<body>
+
+<!-- Page heading -->
+<h1>Welcome to the Secure Vault</h1>
+
+<p>
+    <!-- Link back to the landing page from other pages -->
+    <a href="Assignment 7.2.html".html">&larr; Back to Landing Page</a>
+  </p>
+
+<!-- Form container -->
+<form id="userForm" onsubmit="return validateForm();">
+    <!-- First name input -->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <!-- Last name input -->
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <!-- Zip code input -->
+    <label for="zipCode">Zip Code:</label>
+    <input type="text" id="zipCode" name="zipCode" required>
+
+    <!-- Submit button -->
+    <button type="submit">Unlock Message</button>
+</form>
+
+<!-- Feedback and result area -->
+<div id="message"></div>
+
+<!-- Decorative image as creative element -->
+<img src="IMG_2047.JPG" alt="Security image banner">
+
+</body>
+</html>

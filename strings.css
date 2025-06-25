@@ -1,0 +1,45 @@
+h1 {
+            text-align: center;
+            font-style: bold;
+        }
+        body {
+            background-color: #0b70c9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+        }
+        form {
+            background: #5f1818;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0078D4;
+            color: white;
+            border: none;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: rgb(0, 139, 32);
+        }
+        img {
+            align-self: center;
+            align-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin-top: 20px;
+            border-radius: 10px;
+            margin-left: 700px;
+            
+        }

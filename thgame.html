@@ -1,0 +1,42 @@
+<!-- Created by Richie Cardiel, Date: 05/30/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tonemeifter's Casino - Dice Game</title>
+    <!-- Link to external CSS or JS files -->
+    <script src="newcode.js" defer></script>
+    <link href="game.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Page Header -->
+<header>
+    <h1>Welcome to Tonemeifter's Casino!</h1></header>
+    <p>
+    <!-- Link back to the landing page from other pages -->
+    <a href="Assignment 7.2.html".html">&larr; Back to Landing Page</a>
+  </p>
+<p>Try your luck with the Dice Game!</p>
+
+<!-- Form to trigger the game -->
+<form onsubmit="playDiceGame(); return false;">
+    <!-- Submit button to start the game -->
+    <input type="submit" value="Roll the Dice">
+</form>
+
+<!-- Display the result -->
+<div id="gameResult"></div>
+
+<!-- Example of parameterized function -->
+<form onsubmit="displayUserMessage(document.getElementById('playerName').value); return false;">
+    <label for="playerName">Enter your name:</label>
+    <input type="text" id="playerName" name="playerName">
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Display the personalized message -->
+<div id="userMessage"></div>
+
+</body>
+</html>
